@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <Router>
       <Switch>
-      <Route exact path="/">
+      <Route exact path="/Company-Report">
           <Home />
         </Route>
-      <Route path="/google">
+      <Route path="/Company-Report/google">
           <Google />
         </Route>
       <Route path="/">

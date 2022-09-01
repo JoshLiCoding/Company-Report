@@ -1,7 +1,7 @@
 {
   "name": "company-summaries",
   "version": "1.0.0",
-  "homepage": "https://joshlicoding.github.io/Company-Report/",
+  "homepage": "https://joshlicoding.github.io/Company-Report",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "dependencies": {

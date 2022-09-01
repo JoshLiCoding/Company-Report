@@ -162,11 +162,27 @@ function Home() {
             thenFmt = formatYmd(thenFmt);
             finnhubClient.companyNews(stock, thenFmt, nowFmt, (error, data, response) => {
                 setNews([]);
-                for (var i = 0; i < Math.min(data.length, 3); i++) {
+
+                //"for" loop does not seem to work; "if" statements are more consistent
+                if(data.length > 0){
                     setNews((news) => [...news, [
-                        data[i]['headline'],
-                        data[i]['source'],
-                        data[i]['url']
+                        data[0]['headline'],
+                        data[0]['source'],
+                        data[0]['url']
+                    ]]);
+                }
+                if(data.length > 1){
+                    setNews((news) => [...news, [
+                        data[1]['headline'],
+                        data[1]['source'],
+                        data[1]['url']
+                    ]]);
+                }
+                if(data.length > 2){
+                    setNews((news) => [...news, [
+                        data[2]['headline'],
+                        data[2]['source'],
+                        data[2]['url']
                     ]]);
                 }
             })

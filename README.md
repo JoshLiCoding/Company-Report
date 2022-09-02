@@ -1,4 +1,4 @@
-# Company
+# Company-Report
 A website that automatically provides information about companies using stock tickers
 
 https://joshlicoding.github.io/Company-Report/#/
